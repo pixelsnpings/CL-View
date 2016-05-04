@@ -1,0 +1,4194 @@
+<?xml version="1.0"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <about>
+    <title>Craigslist Search Utility</title>
+    <description>This utility provides a robust way to search craigslist for specific types of ads. Results are aggregated and output to csv as well as pdf.</description>
+    <version>1.0.0</version>
+  </about>
+  <setup>
+    <maxthreads>1</maxthreads>
+    <maxdomains>255</maxdomains>
+    <domains>
+      <domain>
+        <link>http://auburn.craigslist.org/</link>
+        <label>auburn</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bham.craigslist.org/</link>
+        <label>birmingham</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://dothan.craigslist.org/</link>
+        <label>dothan</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://shoals.craigslist.org/</link>
+        <label>florence / muscle shoals</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://gadsden.craigslist.org/</link>
+        <label>gadsden-anniston</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://huntsville.craigslist.org/</link>
+        <label>huntsville / decatur</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mobile.craigslist.org/</link>
+        <label>mobile</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://montgomery.craigslist.org/</link>
+        <label>montgomery</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tuscaloosa.craigslist.org/</link>
+        <label>tuscaloosa</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://anchorage.craigslist.org/</link>
+        <label>anchorage / mat-su</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fairbanks.craigslist.org/</link>
+        <label>fairbanks</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kenai.craigslist.org/</link>
+        <label>kenai peninsula</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://juneau.craigslist.org/</link>
+        <label>southeast alaska</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://flagstaff.craigslist.org/</link>
+        <label>flagstaff / sedona</label>
+        <enabled>false</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mohave.craigslist.org/</link>
+        <label>mohave county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://phoenix.craigslist.org/</link>
+        <label>phoenix</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://prescott.craigslist.org/</link>
+        <label>prescott</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://showlow.craigslist.org/</link>
+        <label>show low</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sierravista.craigslist.org/</link>
+        <label>sierra vista</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tucson.craigslist.org/</link>
+        <label>tucson</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://yuma.craigslist.org/</link>
+        <label>yuma</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fayar.craigslist.org/</link>
+        <label>fayetteville </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fortsmith.craigslist.org/</link>
+        <label>fort smith</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jonesboro.craigslist.org/</link>
+        <label>jonesboro</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://littlerock.craigslist.org/</link>
+        <label>little rock</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://texarkana.craigslist.org/</link>
+        <label>texarkana</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bakersfield.craigslist.org/</link>
+        <label>bakersfield</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chico.craigslist.org/</link>
+        <label>chico</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fresno.craigslist.org/</link>
+        <label>fresno / madera</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://goldcountry.craigslist.org/</link>
+        <label>gold country</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hanford.craigslist.org/</link>
+        <label>hanford-corcoran</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://humboldt.craigslist.org/</link>
+        <label>humboldt county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://imperial.craigslist.org/</link>
+        <label>imperial county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://inlandempire.craigslist.org/</link>
+        <label>inland empire</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://losangeles.craigslist.org/</link>
+        <label>los angeles</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mendocino.craigslist.org/</link>
+        <label>mendocino county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://merced.craigslist.org/</link>
+        <label>merced</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://modesto.craigslist.org/</link>
+        <label>modesto</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://monterey.craigslist.org/</link>
+        <label>monterey bay</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://orangecounty.craigslist.org/</link>
+        <label>orange county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://palmsprings.craigslist.org/</link>
+        <label>palm springs</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://redding.craigslist.org/</link>
+        <label>redding</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sacramento.craigslist.org/</link>
+        <label>sacramento</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sandiego.craigslist.org/</link>
+        <label>san diego</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sfbay.craigslist.org/</link>
+        <label>san francisco bay area</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://slo.craigslist.org/</link>
+        <label>san luis obispo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://santabarbara.craigslist.org/</link>
+        <label>santa barbara</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://santamaria.craigslist.org/</link>
+        <label>santa maria</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://siskiyou.craigslist.org/</link>
+        <label>siskiyou county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://stockton.craigslist.org/</link>
+        <label>stockton</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://susanville.craigslist.org/</link>
+        <label>susanville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ventura.craigslist.org/</link>
+        <label>ventura county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://visalia.craigslist.org/</link>
+        <label>visalia-tulare</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://yubasutter.craigslist.org/</link>
+        <label>yuba-sutter</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://boulder.craigslist.org/</link>
+        <label>boulder</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cosprings.craigslist.org/</link>
+        <label>colorado springs</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://denver.craigslist.org/</link>
+        <label>denver</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://eastco.craigslist.org/</link>
+        <label>eastern CO</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fortcollins.craigslist.org/</link>
+        <label>fort collins / north CO</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://rockies.craigslist.org/</link>
+        <label>high rockies</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://pueblo.craigslist.org/</link>
+        <label>pueblo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://westslope.craigslist.org/</link>
+        <label>western slope</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://newlondon.craigslist.org/</link>
+        <label>eastern CT</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hartford.craigslist.org/</link>
+        <label>hartford</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://newhaven.craigslist.org/</link>
+        <label>new haven</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nwct.craigslist.org/</link>
+        <label>northwest CT</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://delaware.craigslist.org/</link>
+        <label>delaware</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://washingtondc.craigslist.org/</link>
+        <label>washington</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://miami.craigslist.org/brw</link>
+        <label>broward county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://daytona.craigslist.org/</link>
+        <label>daytona beach</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://keys.craigslist.org/</link>
+        <label>florida keys</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fortlauderdale.craigslist.org/</link>
+        <label>fort lauderdale</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://gainesville.craigslist.org/</link>
+        <label>gainesville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cfl.craigslist.org/</link>
+        <label>heartland florida</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jacksonville.craigslist.org/</link>
+        <label>jacksonville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lakeland.craigslist.org/</link>
+        <label>lakeland</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://miami.craigslist.org/mdc</link>
+        <label>miami / dade</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lakecity.craigslist.org/</link>
+        <label>north central FL</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ocala.craigslist.org/</link>
+        <label>ocala</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://okaloosa.craigslist.org/</link>
+        <label>okaloosa / walton</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://orlando.craigslist.org/</link>
+        <label>orlando</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://panamacity.craigslist.org/</link>
+        <label>panama city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://pensacola.craigslist.org/</link>
+        <label>pensacola</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sarasota.craigslist.org/</link>
+        <label>sarasota-bradenton</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://miami.craigslist.org/</link>
+        <label>south florida</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://spacecoast.craigslist.org/</link>
+        <label>space coast</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tallahassee.craigslist.org/</link>
+        <label>tallahassee</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tampa.craigslist.org/</link>
+        <label>tampa bay area</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://treasure.craigslist.org/</link>
+        <label>treasure coast</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://miami.craigslist.org/pbc</link>
+        <label>palm beach county</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://albanyga.craigslist.org/</link>
+        <label>albany </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://athensga.craigslist.org/</link>
+        <label>athens</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://atlanta.craigslist.org/</link>
+        <label>atlanta</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://augusta.craigslist.org/</link>
+        <label>augusta</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://brunswick.craigslist.org/</link>
+        <label>brunswick</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://columbusga.craigslist.org/</link>
+        <label>columbus </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://macon.craigslist.org/</link>
+        <label>macon / warner robins</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nwga.craigslist.org/</link>
+        <label>northwest GA</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://savannah.craigslist.org/</link>
+        <label>savannah / hinesville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://statesboro.craigslist.org/</link>
+        <label>statesboro</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://valdosta.craigslist.org/</link>
+        <label>valdosta</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://honolulu.craigslist.org/</link>
+        <label>hawaii</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://boise.craigslist.org/</link>
+        <label>boise</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://eastidaho.craigslist.org/</link>
+        <label>east idaho</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lewiston.craigslist.org/</link>
+        <label>lewiston / clarkston</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://twinfalls.craigslist.org/</link>
+        <label>twin falls</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bn.craigslist.org/</link>
+        <label>bloomington-normal</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chambana.craigslist.org/</link>
+        <label>champaign urbana</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chicago.craigslist.org/</link>
+        <label>chicago</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://decatur.craigslist.org/</link>
+        <label>decatur</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mattoon.craigslist.org/</link>
+        <label>mattoon-charleston</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://peoria.craigslist.org/</link>
+        <label>peoria</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://rockford.craigslist.org/</link>
+        <label>rockford</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://carbondale.craigslist.org/</link>
+        <label>southern illinois</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://springfieldil.craigslist.org/</link>
+        <label>springfield </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://quincy.craigslist.org/</link>
+        <label>western IL</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bloomington.craigslist.org/</link>
+        <label>bloomington</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://evansville.craigslist.org/</link>
+        <label>evansville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fortwayne.craigslist.org/</link>
+        <label>fort wayne</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://indianapolis.craigslist.org/</link>
+        <label>indianapolis</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kokomo.craigslist.org/</link>
+        <label>kokomo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tippecanoe.craigslist.org/</link>
+        <label>lafayette / west lafayette</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://muncie.craigslist.org/</link>
+        <label>muncie / anderson</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://richmondin.craigslist.org/</link>
+        <label>richmond </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://southbend.craigslist.org/</link>
+        <label>south bend / michiana</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://terrehaute.craigslist.org/</link>
+        <label>terre haute</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ames.craigslist.org/</link>
+        <label>ames</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cedarrapids.craigslist.org/</link>
+        <label>cedar rapids</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://desmoines.craigslist.org/</link>
+        <label>des moines</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://dubuque.craigslist.org/</link>
+        <label>dubuque</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fortdodge.craigslist.org/</link>
+        <label>fort dodge</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://iowacity.craigslist.org/</link>
+        <label>iowa city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://masoncity.craigslist.org/</link>
+        <label>mason city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://quadcities.craigslist.org/</link>
+        <label>quad cities</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://siouxcity.craigslist.org/</link>
+        <label>sioux city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ottumwa.craigslist.org/</link>
+        <label>southeast IA</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://waterloo.craigslist.org/</link>
+        <label>waterloo / cedar falls</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lawrence.craigslist.org/</link>
+        <label>lawrence</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ksu.craigslist.org/</link>
+        <label>manhattan</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nwks.craigslist.org/</link>
+        <label>northwest KS</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://salina.craigslist.org/</link>
+        <label>salina</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://seks.craigslist.org/</link>
+        <label>southeast KS</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://swks.craigslist.org/</link>
+        <label>southwest KS</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://topeka.craigslist.org/</link>
+        <label>topeka</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://wichita.craigslist.org/</link>
+        <label>wichita</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bgky.craigslist.org/</link>
+        <label>bowling green</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://eastky.craigslist.org/</link>
+        <label>eastern kentucky</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lexington.craigslist.org/</link>
+        <label>lexington</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://louisville.craigslist.org/</link>
+        <label>louisville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://owensboro.craigslist.org/</link>
+        <label>owensboro</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://westky.craigslist.org/</link>
+        <label>western KY</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://batonrouge.craigslist.org/</link>
+        <label>baton rouge</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cenla.craigslist.org/</link>
+        <label>central louisiana</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://houma.craigslist.org/</link>
+        <label>houma</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lafayette.craigslist.org/</link>
+        <label>lafayette</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lakecharles.craigslist.org/</link>
+        <label>lake charles</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://monroe.craigslist.org/</link>
+        <label>monroe</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://neworleans.craigslist.org/</link>
+        <label>new orleans</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://shreveport.craigslist.org/</link>
+        <label>shreveport</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://maine.craigslist.org/</link>
+        <label>maine</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://annapolis.craigslist.org/</link>
+        <label>annapolis</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://baltimore.craigslist.org/</link>
+        <label>baltimore</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://easternshore.craigslist.org/</link>
+        <label>eastern shore</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://frederick.craigslist.org/</link>
+        <label>frederick</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://smd.craigslist.org/</link>
+        <label>southern maryland</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://westmd.craigslist.org/</link>
+        <label>western maryland</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://boston.craigslist.org/</link>
+        <label>boston</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://capecod.craigslist.org/</link>
+        <label>cape cod / islands</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://southcoast.craigslist.org/</link>
+        <label>south coast</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://westernmass.craigslist.org/</link>
+        <label>western massachusetts</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://worcester.craigslist.org/</link>
+        <label>worcester / central MA</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://annarbor.craigslist.org/</link>
+        <label>ann arbor</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://battlecreek.craigslist.org/</link>
+        <label>battle creek</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://centralmich.craigslist.org/</link>
+        <label>central michigan</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://detroit.craigslist.org/</link>
+        <label>detroit metro</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://flint.craigslist.org/</link>
+        <label>flint</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://grandrapids.craigslist.org/</link>
+        <label>grand rapids</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://holland.craigslist.org/</link>
+        <label>holland</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jxn.craigslist.org/</link>
+        <label>jackson </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kalamazoo.craigslist.org/</link>
+        <label>kalamazoo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lansing.craigslist.org/</link>
+        <label>lansing</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://monroemi.craigslist.org/</link>
+        <label>monroe </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://muskegon.craigslist.org/</link>
+        <label>muskegon</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nmi.craigslist.org/</link>
+        <label>northern michigan</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://porthuron.craigslist.org/</link>
+        <label>port huron</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://saginaw.craigslist.org/</link>
+        <label>saginaw-midland-baycity</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://swmi.craigslist.org/</link>
+        <label>southwest michigan</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://thumb.craigslist.org/</link>
+        <label>the thumb</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://up.craigslist.org/</link>
+        <label>upper peninsula</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bemidji.craigslist.org/</link>
+        <label>bemidji</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://brainerd.craigslist.org/</link>
+        <label>brainerd</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://duluth.craigslist.org/</link>
+        <label>duluth / superior</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mankato.craigslist.org/</link>
+        <label>mankato</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://minneapolis.craigslist.org/</link>
+        <label>minneapolis / st paul</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://rmn.craigslist.org/</link>
+        <label>rochester </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://marshall.craigslist.org/</link>
+        <label>southwest MN</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://gulfport.craigslist.org/</link>
+        <label>gulfport / biloxi</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hattiesburg.craigslist.org/</link>
+        <label>hattiesburg</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jackson.craigslist.org/</link>
+        <label>jackson</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://meridian.craigslist.org/</link>
+        <label>meridian</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://northmiss.craigslist.org/</link>
+        <label>north mississippi</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://natchez.craigslist.org/</link>
+        <label>southwest MS</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://columbiamo.craigslist.org/</link>
+        <label>columbia / jeff city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://joplin.craigslist.org/</link>
+        <label>joplin</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kansascity.craigslist.org/</link>
+        <label>kansas city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kirksville.craigslist.org/</link>
+        <label>kirksville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://loz.craigslist.org/</link>
+        <label>lake of the ozarks</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://semo.craigslist.org/</link>
+        <label>southeast missouri</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://springfield.craigslist.org/</link>
+        <label>springfield</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://billings.craigslist.org/</link>
+        <label>billings</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bozeman.craigslist.org/</link>
+        <label>bozeman</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://butte.craigslist.org/</link>
+        <label>butte</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://greatfalls.craigslist.org/</link>
+        <label>great falls</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://helena.craigslist.org/</link>
+        <label>helena</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kalispell.craigslist.org/</link>
+        <label>kalispell</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://missoula.craigslist.org/</link>
+        <label>missoula</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://montana.craigslist.org/</link>
+        <label>eastern montana</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://grandisland.craigslist.org/</link>
+        <label>grand island</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lincoln.craigslist.org/</link>
+        <label>lincoln</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://northplatte.craigslist.org/</link>
+        <label>north platte</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://omaha.craigslist.org/</link>
+        <label>omaha / council bluffs</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://scottsbluff.craigslist.org/</link>
+        <label>scottsbluff / panhandle</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://elko.craigslist.org/</link>
+        <label>elko</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lasvegas.craigslist.org/</link>
+        <label>las vegas</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://reno.craigslist.org/</link>
+        <label>reno / tahoe</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nh.craigslist.org/</link>
+        <label>new hampshire</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cnj.craigslist.org/</link>
+        <label>central NJ</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jerseyshore.craigslist.org/</link>
+        <label>jersey shore</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://newjersey.craigslist.org/</link>
+        <label>north jersey</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://southjersey.craigslist.org/</link>
+        <label>south jersey</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://albuquerque.craigslist.org/</link>
+        <label>albuquerque</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://clovis.craigslist.org/</link>
+        <label>clovis / portales</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://farmington.craigslist.org/</link>
+        <label>farmington</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lascruces.craigslist.org/</link>
+        <label>las cruces</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://roswell.craigslist.org/</link>
+        <label>roswell / carlsbad</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://santafe.craigslist.org/</link>
+        <label>santa fe / taos</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://albany.craigslist.org/</link>
+        <label>albany</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://binghamton.craigslist.org/</link>
+        <label>binghamton</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://buffalo.craigslist.org/</link>
+        <label>buffalo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://catskills.craigslist.org/</link>
+        <label>catskills</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chautauqua.craigslist.org/</link>
+        <label>chautauqua</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://elmira.craigslist.org/</link>
+        <label>elmira-corning</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fingerlakes.craigslist.org/</link>
+        <label>finger lakes</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://glensfalls.craigslist.org/</link>
+        <label>glens falls</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hudsonvalley.craigslist.org/</link>
+        <label>hudson valley</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ithaca.craigslist.org/</link>
+        <label>ithaca</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://longisland.craigslist.org/</link>
+        <label>long island</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://newyork.craigslist.org/</link>
+        <label>new york city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://oneonta.craigslist.org/</link>
+        <label>oneonta</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://plattsburgh.craigslist.org/</link>
+        <label>plattsburgh-adirondacks</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://potsdam.craigslist.org/</link>
+        <label>potsdam-canton-massena</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://rochester.craigslist.org/</link>
+        <label>rochester</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://syracuse.craigslist.org/</link>
+        <label>syracuse</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://twintiers.craigslist.org/</link>
+        <label>twin tiers NY/PA</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://utica.craigslist.org/</link>
+        <label>utica-rome-oneida</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://watertown.craigslist.org/</link>
+        <label>watertown</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://asheville.craigslist.org/</link>
+        <label>asheville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://boone.craigslist.org/</link>
+        <label>boone</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://charlotte.craigslist.org/</link>
+        <label>charlotte</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://eastnc.craigslist.org/</link>
+        <label>eastern NC</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fayetteville.craigslist.org/</link>
+        <label>fayetteville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://greensboro.craigslist.org/</link>
+        <label>greensboro</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hickory.craigslist.org/</link>
+        <label>hickory / lenoir</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://onslow.craigslist.org/</link>
+        <label>jacksonville </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://outerbanks.craigslist.org/</link>
+        <label>outer banks</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://raleigh.craigslist.org/</link>
+        <label>raleigh / durham / CH</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://wilmington.craigslist.org/</link>
+        <label>wilmington</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://winstonsalem.craigslist.org/</link>
+        <label>winston-salem</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bismarck.craigslist.org/</link>
+        <label>bismarck</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fargo.craigslist.org/</link>
+        <label>fargo / moorhead</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://grandforks.craigslist.org/</link>
+        <label>grand forks</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nd.craigslist.org/</link>
+        <label>north dakota</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://akroncanton.craigslist.org/</link>
+        <label>akron / canton</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ashtabula.craigslist.org/</link>
+        <label>ashtabula</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://athensohio.craigslist.org/</link>
+        <label>athens </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chillicothe.craigslist.org/</link>
+        <label>chillicothe</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cincinnati.craigslist.org/</link>
+        <label>cincinnati</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cleveland.craigslist.org/</link>
+        <label>cleveland</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://columbus.craigslist.org/</link>
+        <label>columbus</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://dayton.craigslist.org/</link>
+        <label>dayton / springfield</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://limaohio.craigslist.org/</link>
+        <label>lima / findlay</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mansfield.craigslist.org/</link>
+        <label>mansfield</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sandusky.craigslist.org/</link>
+        <label>sandusky</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://toledo.craigslist.org/</link>
+        <label>toledo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tuscarawas.craigslist.org/</link>
+        <label>tuscarawas co</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://youngstown.craigslist.org/</link>
+        <label>youngstown</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://zanesville.craigslist.org/</link>
+        <label>zanesville / cambridge</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lawton.craigslist.org/</link>
+        <label>lawton</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://enid.craigslist.org/</link>
+        <label>northwest OK</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://oklahomacity.craigslist.org/</link>
+        <label>oklahoma city</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://stillwater.craigslist.org/</link>
+        <label>stillwater</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tulsa.craigslist.org/</link>
+        <label>tulsa</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bend.craigslist.org/</link>
+        <label>bend</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://corvallis.craigslist.org/</link>
+        <label>corvallis/albany</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://eastoregon.craigslist.org/</link>
+        <label>east oregon</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://eugene.craigslist.org/</link>
+        <label>eugene</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://klamath.craigslist.org/</link>
+        <label>klamath falls</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://medford.craigslist.org/</link>
+        <label>medford-ashland</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://oregoncoast.craigslist.org/</link>
+        <label>oregon coast</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://portland.craigslist.org/</link>
+        <label>portland</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://roseburg.craigslist.org/</link>
+        <label>roseburg</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://salem.craigslist.org/</link>
+        <label>salem</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://altoona.craigslist.org/</link>
+        <label>altoona-johnstown</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chambersburg.craigslist.org/</link>
+        <label>cumberland valley</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://erie.craigslist.org/</link>
+        <label>erie</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://harrisburg.craigslist.org/</link>
+        <label>harrisburg</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lancaster.craigslist.org/</link>
+        <label>lancaster</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://allentown.craigslist.org/</link>
+        <label>lehigh valley</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://meadville.craigslist.org/</link>
+        <label>meadville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://philadelphia.craigslist.org/</link>
+        <label>philadelphia</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://pittsburgh.craigslist.org/</link>
+        <label>pittsburgh</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://poconos.craigslist.org/</link>
+        <label>poconos</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://reading.craigslist.org/</link>
+        <label>reading</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://scranton.craigslist.org/</link>
+        <label>scranton / wilkes-barre</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://pennstate.craigslist.org/</link>
+        <label>state college</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://williamsport.craigslist.org/</link>
+        <label>williamsport</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://york.craigslist.org/</link>
+        <label>york</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://providence.craigslist.org/</link>
+        <label>rhode island</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://charleston.craigslist.org/</link>
+        <label>charleston</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://columbia.craigslist.org/</link>
+        <label>columbia</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://florencesc.craigslist.org/</link>
+        <label>florence</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://greenville.craigslist.org/</link>
+        <label>greenville / upstate</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hiltonhead.craigslist.org/</link>
+        <label>hilton head</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://myrtlebeach.craigslist.org/</link>
+        <label>myrtle beach</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nesd.craigslist.org/</link>
+        <label>northeast SD</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://csd.craigslist.org/</link>
+        <label>pierre / central SD</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://rapidcity.craigslist.org/</link>
+        <label>rapid city / west SD</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://siouxfalls.craigslist.org/</link>
+        <label>sioux falls / SE SD</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sd.craigslist.org/</link>
+        <label>south dakota</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chattanooga.craigslist.org/</link>
+        <label>chattanooga</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://clarksville.craigslist.org/</link>
+        <label>clarksville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cookeville.craigslist.org/</link>
+        <label>cookeville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jacksontn.craigslist.org/</link>
+        <label>jackson </label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://knoxville.craigslist.org/</link>
+        <label>knoxville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://memphis.craigslist.org/</link>
+        <label>memphis</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nashville.craigslist.org/</link>
+        <label>nashville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tricities.craigslist.org/</link>
+        <label>tri-cities</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://abilene.craigslist.org/</link>
+        <label>abilene</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://amarillo.craigslist.org/</link>
+        <label>amarillo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://austin.craigslist.org/</link>
+        <label>austin</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://beaumont.craigslist.org/</link>
+        <label>beaumont / port arthur</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://brownsville.craigslist.org/</link>
+        <label>brownsville</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://collegestation.craigslist.org/</link>
+        <label>college station</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://corpuschristi.craigslist.org/</link>
+        <label>corpus christi</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://dallas.craigslist.org/</link>
+        <label>dallas / fort worth</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nacogdoches.craigslist.org/</link>
+        <label>deep east texas</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://delrio.craigslist.org/</link>
+        <label>del rio / eagle pass</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://galveston.craigslist.org/</link>
+        <label>galveston</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://houston.craigslist.org/</link>
+        <label>houston</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://killeen.craigslist.org/</link>
+        <label>killeen / temple / ft hood</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://laredo.craigslist.org/</link>
+        <label>laredo</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lubbock.craigslist.org/</link>
+        <label>lubbock</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://mcallen.craigslist.org/</link>
+        <label>mcallen / edinburg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://odessa.craigslist.org/</link>
+        <label>odessa / midland</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sanangelo.craigslist.org/</link>
+        <label>san angelo</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sanantonio.craigslist.org/</link>
+        <label>san antonio</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sanmarcos.craigslist.org/</link>
+        <label>san marcos</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bigbend.craigslist.org/</link>
+        <label>southwest TX</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://texoma.craigslist.org/</link>
+        <label>texoma</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://easttexas.craigslist.org/</link>
+        <label>tyler / east TX</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://victoriatx.craigslist.org/</link>
+        <label>victoria </label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://waco.craigslist.org/</link>
+        <label>waco</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://wichitafalls.craigslist.org/</link>
+        <label>wichita falls</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://logan.craigslist.org/</link>
+        <label>logan</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://ogden.craigslist.org/</link>
+        <label>ogden-clearfield</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://provo.craigslist.org/</link>
+        <label>provo / orem</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://saltlakecity.craigslist.org/</link>
+        <label>salt lake city</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://vermont.craigslist.org/</link>
+        <label>vermont</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://charlottesville.craigslist.org/</link>
+        <label>charlottesville</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://danville.craigslist.org/</link>
+        <label>danville</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://fredericksburg.craigslist.org/</link>
+        <label>fredericksburg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://norfolk.craigslist.org/</link>
+        <label>hampton roads</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://harrisonburg.craigslist.org/</link>
+        <label>harrisonburg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lynchburg.craigslist.org/</link>
+        <label>lynchburg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://blacksburg.craigslist.org/</link>
+        <label>new river valley</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://richmond.craigslist.org/</link>
+        <label>richmond</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://roanoke.craigslist.org/</link>
+        <label>roanoke</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://swva.craigslist.org/</link>
+        <label>southwest VA</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://winchester.craigslist.org/</link>
+        <label>winchester</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bellingham.craigslist.org/</link>
+        <label>bellingham</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kpr.craigslist.org/</link>
+        <label>kennewick-pasco-richland</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://moseslake.craigslist.org/</link>
+        <label>moses lake</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://olympic.craigslist.org/</link>
+        <label>olympic peninsula</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://pullman.craigslist.org/</link>
+        <label>pullman / moscow</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://seattle.craigslist.org/</link>
+        <label>seattle-tacoma</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://skagit.craigslist.org/</link>
+        <label>skagit / island / SJI</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://wenatchee.craigslist.org/</link>
+        <label>wenatchee</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://yakima.craigslist.org/</link>
+        <label>yakima</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://charlestonwv.craigslist.org/</link>
+        <label>charleston </label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://martinsburg.craigslist.org/</link>
+        <label>eastern panhandle</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://huntington.craigslist.org/</link>
+        <label>huntington-ashland</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://morgantown.craigslist.org/</link>
+        <label>morgantown</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://wheeling.craigslist.org/</link>
+        <label>northern panhandle</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://parkersburg.craigslist.org/</link>
+        <label>parkersburg-marietta</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://swv.craigslist.org/</link>
+        <label>southern WV</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://appleton.craigslist.org/</link>
+        <label>appleton-oshkosh-FDL</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://eauclaire.craigslist.org/</link>
+        <label>eau claire</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://greenbay.craigslist.org/</link>
+        <label>green bay</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://janesville.craigslist.org/</link>
+        <label>janesville</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://racine.craigslist.org/</link>
+        <label>kenosha-racine</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://madison.craigslist.org/</link>
+        <label>madison</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://milwaukee.craigslist.org/</link>
+        <label>milwaukee</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://northernwi.craigslist.org/</link>
+        <label>northern WI</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sheboygan.craigslist.org/</link>
+        <label>sheboygan</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://wausau.craigslist.org/</link>
+        <label>wausau</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://wyoming.craigslist.org/</link>
+        <label>wyoming</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://micronesia.craigslist.org/</link>
+        <label>guam-micronesia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://puertorico.craigslist.org/</link>
+        <label>puerto rico</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://calgary.craigslist.ca/</link>
+        <label>calgary</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://edmonton.craigslist.ca/</link>
+        <label>edmonton</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lethbridge.craigslist.ca/</link>
+        <label>lethbridge</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://hat.craigslist.ca/</link>
+        <label>medicine hat</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://peace.craigslist.ca/</link>
+        <label>peace river country</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://reddeer.craigslist.ca/</link>
+        <label>red deer</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://cariboo.craigslist.ca/</link>
+        <label>cariboo</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://comoxvalley.craigslist.ca/</link>
+        <label>comox valley</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://abbotsford.craigslist.ca/</link>
+        <label>fraser valley</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kamloops.craigslist.ca/</link>
+        <label>kamloops</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:46 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kelowna.craigslist.ca/</link>
+        <label>kelowna / okanagan</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kootenays.craigslist.ca/</link>
+        <label>kootenays</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://nanaimo.craigslist.ca/</link>
+        <label>nanaimo</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://princegeorge.craigslist.ca/</link>
+        <label>prince george</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://skeena.craigslist.ca/</link>
+        <label>skeena-bulkley</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sunshine.craigslist.ca/</link>
+        <label>sunshine coast</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://vancouver.craigslist.ca/</link>
+        <label>vancouver</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://victoria.craigslist.ca/</link>
+        <label>victoria</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://whistler.craigslist.ca/</link>
+        <label>whistler</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://winnipeg.craigslist.ca/</link>
+        <label>winnipeg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://newbrunswick.craigslist.ca/</link>
+        <label>new brunswick</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:45 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://territories.craigslist.ca/</link>
+        <label>territories</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://yellowknife.craigslist.ca/</link>
+        <label>yellowknife</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://halifax.craigslist.ca/</link>
+        <label>halifax</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://barrie.craigslist.ca/</link>
+        <label>barrie</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://belleville.craigslist.ca/</link>
+        <label>belleville</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:44 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://brantford.craigslist.ca/</link>
+        <label>brantford-woodstock</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://chatham.craigslist.ca/</link>
+        <label>chatham-kent</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://cornwall.craigslist.ca/</link>
+        <label>cornwall</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://guelph.craigslist.ca/</link>
+        <label>guelph</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://hamilton.craigslist.ca/</link>
+        <label>hamilton-burlington</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kingston.craigslist.ca/</link>
+        <label>kingston</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kitchener.craigslist.ca/</link>
+        <label>kitchener-waterloo-cambridge</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://londonon.craigslist.ca/</link>
+        <label>london </label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://niagara.craigslist.ca/</link>
+        <label>niagara region</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://ottawa.craigslist.ca/</link>
+        <label>ottawa-hull-gatineau</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://owensound.craigslist.ca/</link>
+        <label>owen sound</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:51 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://peterborough.craigslist.ca/</link>
+        <label>peterborough</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sarnia.craigslist.ca/</link>
+        <label>sarnia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://soo.craigslist.ca/</link>
+        <label>sault ste marie</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sudbury.craigslist.ca/</link>
+        <label>sudbury</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://thunderbay.craigslist.ca/</link>
+        <label>thunder bay</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://toronto.craigslist.ca/</link>
+        <label>toronto</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://windsor.craigslist.ca/</link>
+        <label>windsor</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://pei.craigslist.ca/</link>
+        <label>prince edward island</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://montreal.craigslist.ca/</link>
+        <label>montreal</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://quebec.craigslist.ca/</link>
+        <label>quebec city</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://saguenay.craigslist.ca/</link>
+        <label>saguenay</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:51 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sherbrooke.craigslist.ca/</link>
+        <label>sherbrooke</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:53 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://troisrivieres.craigslist.ca/</link>
+        <label>trois-rivieres</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:53 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://regina.craigslist.ca/</link>
+        <label>regina</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:53 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://saskatoon.craigslist.ca/</link>
+        <label>saskatoon</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://whitehorse.craigslist.ca/</link>
+        <label>whitehorse</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://vienna.craigslist.at/</link>
+        <label>vienna</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://brussels.craigslist.org/</link>
+        <label>belgium</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bulgaria.craigslist.org/</link>
+        <label>bulgaria</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://zagreb.craigslist.org/</link>
+        <label>croatia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:53 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://prague.craigslist.cz/</link>
+        <label>prague</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://copenhagen.craigslist.org/</link>
+        <label>copenhagen</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://helsinki.craigslist.fi/</link>
+        <label>finland</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:53 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bordeaux.craigslist.org/</link>
+        <label>bordeaux</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:53 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://rennes.craigslist.org/</link>
+        <label>brittany</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://grenoble.craigslist.org/</link>
+        <label>grenoble</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lille.craigslist.org/</link>
+        <label>lille</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://loire.craigslist.org/</link>
+        <label>loire valley</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lyon.craigslist.org/</link>
+        <label>lyon</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://marseilles.craigslist.org/</link>
+        <label>marseille</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://montpellier.craigslist.org/</link>
+        <label>montpellier</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:51 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://rouen.craigslist.org/</link>
+        <label>normandy</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:52 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://paris.craigslist.org/</link>
+        <label>paris</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:51 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://strasbourg.craigslist.org/</link>
+        <label>strasbourg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:51 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://toulouse.craigslist.org/</link>
+        <label>toulouse</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://berlin.craigslist.de/</link>
+        <label>berlin</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bremen.craigslist.de/</link>
+        <label>bremen</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://cologne.craigslist.de/</link>
+        <label>cologne</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://dresden.craigslist.de/</link>
+        <label>dresden</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://dusseldorf.craigslist.de/</link>
+        <label>dusseldorf</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://essen.craigslist.de/</link>
+        <label>essen / ruhr</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://frankfurt.craigslist.de/</link>
+        <label>frankfurt</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://hamburg.craigslist.de/</link>
+        <label>hamburg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://hannover.craigslist.de/</link>
+        <label>hannover</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://heidelberg.craigslist.de/</link>
+        <label>heidelberg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kaiserslautern.craigslist.de/</link>
+        <label>kaiserslautern</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://leipzig.craigslist.de/</link>
+        <label>leipzig</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://munich.craigslist.de/</link>
+        <label>munich</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://nuremberg.craigslist.de/</link>
+        <label>nuremberg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://stuttgart.craigslist.de/</link>
+        <label>stuttgart</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://athens.craigslist.gr/</link>
+        <label>greece</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://budapest.craigslist.org/</link>
+        <label>budapest</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://reykjavik.craigslist.org/</link>
+        <label>reykjavik</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://dublin.craigslist.org/</link>
+        <label>dublin</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bologna.craigslist.it/</link>
+        <label>bologna</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://florence.craigslist.it/</link>
+        <label>florence / tuscany</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://genoa.craigslist.it/</link>
+        <label>genoa</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:51 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://milan.craigslist.it/</link>
+        <label>milan</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://naples.craigslist.it/</link>
+        <label>napoli / campania</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://perugia.craigslist.it/</link>
+        <label>perugia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://rome.craigslist.it/</link>
+        <label>rome</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:51 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sardinia.craigslist.it/</link>
+        <label>sardinia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sicily.craigslist.it/</link>
+        <label>sicilia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://torino.craigslist.it/</link>
+        <label>torino</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://venice.craigslist.it/</link>
+        <label>venice / veneto</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://luxembourg.craigslist.org/</link>
+        <label>luxembourg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://amsterdam.craigslist.org/</link>
+        <label>amsterdam / randstad</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://oslo.craigslist.org/</link>
+        <label>norway</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:50 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://warsaw.craigslist.pl/</link>
+        <label>poland</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:48 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://faro.craigslist.pt/</link>
+        <label>faro / algarve</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lisbon.craigslist.pt/</link>
+        <label>lisbon</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://porto.craigslist.pt/</link>
+        <label>porto</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bucharest.craigslist.org/</link>
+        <label>romania</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://moscow.craigslist.org/</link>
+        <label>moscow</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://alicante.craigslist.es/</link>
+        <label>alicante</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:49 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://baleares.craigslist.es/</link>
+        <label>baleares</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://barcelona.craigslist.es/</link>
+        <label>barcelona</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bilbao.craigslist.es/</link>
+        <label>bilbao</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cadiz.craigslist.es/</link>
+        <label>cadiz</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://canarias.craigslist.es/</link>
+        <label>canarias</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://granada.craigslist.es/</link>
+        <label>granada</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://madrid.craigslist.es/</link>
+        <label>madrid</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://malaga.craigslist.es/</link>
+        <label>malaga</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sevilla.craigslist.es/</link>
+        <label>sevilla</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://valencia.craigslist.es/</link>
+        <label>valencia</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://stockholm.craigslist.se/</link>
+        <label>sweden</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://basel.craigslist.ch/</link>
+        <label>basel</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bern.craigslist.ch/</link>
+        <label>bern</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://geneva.craigslist.ch/</link>
+        <label>geneva</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lausanne.craigslist.ch/</link>
+        <label>lausanne</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://zurich.craigslist.ch/</link>
+        <label>zurich</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://istanbul.craigslist.com.tr/</link>
+        <label>turkey</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ukraine.craigslist.org/</link>
+        <label>ukraine</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://aberdeen.craigslist.co.uk/</link>
+        <label>aberdeen</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bath.craigslist.co.uk/</link>
+        <label>bath</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://belfast.craigslist.co.uk/</link>
+        <label>belfast</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://birmingham.craigslist.co.uk/</link>
+        <label>birmingham / west mids</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://brighton.craigslist.co.uk/</link>
+        <label>brighton</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bristol.craigslist.co.uk/</link>
+        <label>bristol</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://cardiff.craigslist.co.uk/</link>
+        <label>cardiff / wales</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://coventry.craigslist.co.uk/</link>
+        <label>coventry</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://derby.craigslist.co.uk/</link>
+        <label>derby</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://dundee.craigslist.co.uk/</link>
+        <label>dundee</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://norwich.craigslist.co.uk/</link>
+        <label>east anglia</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://eastmids.craigslist.co.uk/</link>
+        <label>east midlands</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://edinburgh.craigslist.co.uk/</link>
+        <label>edinburgh</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://essex.craigslist.co.uk/</link>
+        <label>essex</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://glasgow.craigslist.co.uk/</link>
+        <label>glasgow</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hampshire.craigslist.co.uk/</link>
+        <label>hampshire</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kent.craigslist.co.uk/</link>
+        <label>kent</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://leeds.craigslist.co.uk/</link>
+        <label>leeds</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://liverpool.craigslist.co.uk/</link>
+        <label>liverpool</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://london.craigslist.co.uk/</link>
+        <label>london</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://manchester.craigslist.co.uk/</link>
+        <label>manchester</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://newcastle.craigslist.co.uk/</link>
+        <label>newcastle / NE england</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nottingham.craigslist.co.uk/</link>
+        <label>nottingham</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://oxford.craigslist.co.uk/</link>
+        <label>oxford</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sheffield.craigslist.co.uk/</link>
+        <label>sheffield</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bangladesh.craigslist.org/</link>
+        <label>bangladesh</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://beijing.craigslist.com.cn/</link>
+        <label>beijing</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chengdu.craigslist.com.cn/</link>
+        <label>chengdu</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chongqing.craigslist.com.cn/</link>
+        <label>chongqing</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://dalian.craigslist.com.cn/</link>
+        <label>dalian</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://guangzhou.craigslist.com.cn/</link>
+        <label>guangzhou</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hangzhou.craigslist.com.cn/</link>
+        <label>hangzhou</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nanjing.craigslist.com.cn/</link>
+        <label>nanjing</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://shanghai.craigslist.com.cn/</link>
+        <label>shanghai</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://shenyang.craigslist.com.cn/</link>
+        <label>shenyang</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://shenzhen.craigslist.com.cn/</link>
+        <label>shenzhen</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://wuhan.craigslist.com.cn/</link>
+        <label>wuhan</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://micronesia.craigslist.org/</link>
+        <label>guam-micronesia</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hongkong.craigslist.hk/</link>
+        <label>hong kong</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ahmedabad.craigslist.co.in/</link>
+        <label>ahmedabad</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bangalore.craigslist.co.in/</link>
+        <label>bangalore</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://bhubaneswar.craigslist.co.in/</link>
+        <label>bhubaneswar</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://chandigarh.craigslist.co.in/</link>
+        <label>chandigarh</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://delhi.craigslist.co.in/</link>
+        <label>delhi</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://goa.craigslist.co.in/</link>
+        <label>goa</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hyderabad.craigslist.co.in/</link>
+        <label>hyderabad</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://indore.craigslist.co.in/</link>
+        <label>indore</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jaipur.craigslist.co.in/</link>
+        <label>jaipur</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kerala.craigslist.co.in/</link>
+        <label>kerala</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://lucknow.craigslist.co.in/</link>
+        <label>lucknow</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mumbai.craigslist.co.in/</link>
+        <label>mumbai</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://pune.craigslist.co.in/</link>
+        <label>pune</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://surat.craigslist.co.in/</link>
+        <label>surat surat</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jakarta.craigslist.org/</link>
+        <label>indonesia</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tehran.craigslist.org/</link>
+        <label>iran</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://baghdad.craigslist.org/</link>
+        <label>iraq</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://haifa.craigslist.org/</link>
+        <label>haifa</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://jerusalem.craigslist.org/</link>
+        <label>jerusalem</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://telaviv.craigslist.org/</link>
+        <label>tel aviv</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://ramallah.craigslist.org/</link>
+        <label>west bank</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://fukuoka.craigslist.jp/</link>
+        <label>fukuoka</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://hiroshima.craigslist.jp/</link>
+        <label>hiroshima</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://nagoya.craigslist.jp/</link>
+        <label>nagoya</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://okinawa.craigslist.jp/</link>
+        <label>okinawa</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://osaka.craigslist.jp/</link>
+        <label>osaka-kobe-kyoto</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sapporo.craigslist.jp/</link>
+        <label>sapporo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://sendai.craigslist.jp/</link>
+        <label>sendai</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tokyo.craigslist.jp/</link>
+        <label>tokyo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://seoul.craigslist.co.kr/</link>
+        <label>seoul</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://kuwait.craigslist.org/</link>
+        <label>kuwait</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://malaysia.craigslist.org/</link>
+        <label>malaysia</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://pakistan.craigslist.org/</link>
+        <label>pakistan</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bacolod.craigslist.com.ph/</link>
+        <label>bacolod</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://naga.craigslist.com.ph/</link>
+        <label>bicol region</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://cdo.craigslist.com.ph/</link>
+        <label>cagayan de oro</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://cebu.craigslist.com.ph/</link>
+        <label>cebu</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://davaocity.craigslist.com.ph/</link>
+        <label>davao city</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://iloilo.craigslist.com.ph/</link>
+        <label>iloilo</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://manila.craigslist.com.ph/</link>
+        <label>manila</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://pampanga.craigslist.com.ph/</link>
+        <label>pampanga</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://zamboanga.craigslist.com.ph/</link>
+        <label>zamboanga</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://singapore.craigslist.com.sg/</link>
+        <label>singapore</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://taipei.craigslist.com.tw/</link>
+        <label>taiwan</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bangkok.craigslist.co.th/</link>
+        <label>thailand</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://dubai.craigslist.org/</link>
+        <label>united arab emirates</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://vietnam.craigslist.org/</link>
+        <label>vietnam</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://adelaide.craigslist.com.au/</link>
+        <label>adelaide</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://brisbane.craigslist.com.au/</link>
+        <label>brisbane</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://cairns.craigslist.com.au/</link>
+        <label>cairns</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://canberra.craigslist.com.au/</link>
+        <label>canberra</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://darwin.craigslist.com.au/</link>
+        <label>darwin</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://goldcoast.craigslist.com.au/</link>
+        <label>gold coast</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://melbourne.craigslist.com.au/</link>
+        <label>melbourne</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://perth.craigslist.com.au/</link>
+        <label>perth</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://sydney.craigslist.com.au/</link>
+        <label>sydney</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://hobart.craigslist.com.au/</link>
+        <label>tasmania</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://wollongong.craigslist.com.au/</link>
+        <label>wollongong</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://auckland.craigslist.org/</link>
+        <label>auckland</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://christchurch.craigslist.org/</link>
+        <label>christchurch</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://dunedin.craigslist.co.nz/</link>
+        <label>dunedin</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://wellington.craigslist.org/</link>
+        <label>wellington</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://buenosaires.craigslist.org/</link>
+        <label>buenos aires</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:42 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lapaz.craigslist.org/</link>
+        <label>bolivia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://belohorizonte.craigslist.org/</link>
+        <label>belo horizonte</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:43 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://brasilia.craigslist.org/</link>
+        <label>brasilia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://curitiba.craigslist.org/</link>
+        <label>curitiba</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://fortaleza.craigslist.org/</link>
+        <label>fortaleza</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://portoalegre.craigslist.org/</link>
+        <label>porto alegre</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://recife.craigslist.org/</link>
+        <label>recife</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://rio.craigslist.org/</link>
+        <label>rio de janeiro</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://saopaulo.craigslist.org/</link>
+        <label>sao paulo</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://caribbean.craigslist.org/</link>
+        <label>caribbean islands</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://santiago.craigslist.org/</link>
+        <label>chile</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://colombia.craigslist.org/</link>
+        <label>colombia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://costarica.craigslist.org/</link>
+        <label>costa rica</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://santodomingo.craigslist.org/</link>
+        <label>dominican republic</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://quito.craigslist.org/</link>
+        <label>ecuador</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://guatemala.craigslist.org/</link>
+        <label>guatemala</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://acapulco.craigslist.com.mx/</link>
+        <label>acapulco</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://bajasur.craigslist.com.mx/</link>
+        <label>baja california sur</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://chihuahua.craigslist.com.mx/</link>
+        <label>chihuahua</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://juarez.craigslist.com.mx/</link>
+        <label>ciudad juarez</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://guadalajara.craigslist.com.mx/</link>
+        <label>guadalajara</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://guanajuato.craigslist.com.mx/</link>
+        <label>guanajuato</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://hermosillo.craigslist.com.mx/</link>
+        <label>hermosillo</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://mazatlan.craigslist.com.mx/</link>
+        <label>mazatlan</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://mexicocity.craigslist.com.mx/</link>
+        <label>mexico city</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://monterrey.craigslist.com.mx/</link>
+        <label>monterrey</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://oaxaca.craigslist.com.mx/</link>
+        <label>oaxaca</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://puebla.craigslist.com.mx/</link>
+        <label>puebla</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://pv.craigslist.com.mx/</link>
+        <label>puerto vallarta</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://tijuana.craigslist.com.mx/</link>
+        <label>tijuana</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://veracruz.craigslist.com.mx/</link>
+        <label>veracruz</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://yucatan.craigslist.com.mx/</link>
+        <label>yucatan</label>
+        <enabled>true</enabled>
+        <lastquery>Never</lastquery>
+      </domain>
+      <domain>
+        <link>http://managua.craigslist.org/</link>
+        <label>nicaragua</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://panama.craigslist.org/</link>
+        <label>panama</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://lima.craigslist.org/</link>
+        <label>peru</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://puertorico.craigslist.org/</link>
+        <label>puerto rico</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://montevideo.craigslist.org/</link>
+        <label>montevideo</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://caracas.craigslist.org/</link>
+        <label>venezuela</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://virgin.craigslist.org/</link>
+        <label>virgin islands</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://cairo.craigslist.org/</link>
+        <label>egypt</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://addisababa.craigslist.org/</link>
+        <label>ethiopia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://accra.craigslist.org/</link>
+        <label>ghana</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:40 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://kenya.craigslist.org/</link>
+        <label>kenya</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://casablanca.craigslist.org/</link>
+        <label>morocco</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://capetown.craigslist.co.za/</link>
+        <label>cape town</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:41 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://durban.craigslist.co.za/</link>
+        <label>durban</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://johannesburg.craigslist.co.za/</link>
+        <label>johannesburg</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://pretoria.craigslist.co.za/</link>
+        <label>pretoria</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://tunis.craigslist.org/</link>
+        <label>tunisia</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://www.craigslist.org/about/help/</link>
+        <label>help</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://www.craigslist.org/about/scams</link>
+        <label>safety</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://www.craigslist.org/about/privacy.policy</link>
+        <label>privacy</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://forums.craigslist.org/</link>
+        <label>feedback</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:39 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://www.craigslist.org/about/terms.of.use</link>
+        <label>terms</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:47 PM</lastquery>
+      </domain>
+      <domain>
+        <link>http://www.craigslist.org/about/</link>
+        <label>about</label>
+        <enabled>true</enabled>
+        <lastquery>5/3/2016 9:09:38 PM</lastquery>
+      </domain>
+    </domains>
+  </setup>
+  <filter>
+    <keywords>Website</keywords>
+  </filter>
+  <output>
+    <enablepdfoutput>true</enablepdfoutput>
+    <pdfoutputpath>C:\Users\Daniel\Desktop</pdfoutputpath>
+    <enableemailpdf>true</enableemailpdf>
+    <pdfemailrecipient>pixelsnpings@gmail.com1</pdfemailrecipient>
+    <csvoutputpath>C:\Users\Daniel\Desktop</csvoutputpath>
+  </output>
+</configuration>
